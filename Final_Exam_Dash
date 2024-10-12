@@ -133,7 +133,7 @@ def update_output_container(selected_statistics, value):
  # Yearly Statistic Report Plots
     # Check for Yearly Statistics.                             
     elif (input_year and selected_statistics=='Yearly Statistics') :
-        yearly_data = data[data['Year'] == 1980, 2024]
+        yearly_data = data[(data['Year'] >= 1980) & (data['Year'] <= 2024)]
                               
 
                               
